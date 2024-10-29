@@ -1,0 +1,29 @@
+Project to make a Generative Adverserial Network to mouse a simulated mouse pointer as humanly as possible.
+
+The idea is to mouve a mouse from A to B in the most human-like fashion. 
+
+This is part of a larger project to help me automate farming in a video game, without being caught. 
+
+A GAN consists of a generator and discrimantor. 
+The generator tries to move the mouse as human-like as possible.
+The discriminator tries to detect weather this was a human or bot movement.
+
+Both AIs will keep improving themselves in an endless cycle. 
+
+TODO:
+--Make github
+--Fix up timestamp code
+--Normalise and treat data
+
+1# Training data
+
+A key part of this process will be having usable training data.
+I, myself, believe I am a human being and thus I move my computer mouse as human-like as possible. 
+I have small imperfactions, hand acceleration and deceleration, even tiny jitters. 
+A bot would move in a perfectly straight, optimal line. 
+
+My plan is to record my mouse movements using a program, then save them and label them. 
+
+I can use the pyinput library to capture mouse input.
+I will also use the "time" and "csv" libraries to save that input periodically. 
+
